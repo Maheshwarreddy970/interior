@@ -2,7 +2,10 @@ import React from "react";
 
 export default function Button({ text }: { text: string }) {
   return (
-    <button className="group relative inline-flex h-11 items-center justify-center overflow-hidden rounded-xl bg-neutral-950 px-6 text-neutral-200">
+    <button
+      type="submit"
+      className="group relative transition-all duration-200 hover:scale-105 active:scale-95 inline-flex h-11 items-center justify-center overflow-hidden rounded-xl bg-neutral-950 px-6 text-neutral-200"
+    >
       <span>{text}</span>
       <div className="ml-1 transition group-hover:translate-x-1">
         <svg

@@ -12,11 +12,10 @@ interface NavigationItem {
 
 // List of navigation items
 const navigationItems: NavigationItem[] = [
-    { name: "Home", href: "" },
-    { name: "Portfolio", href: "" },
-    { name: "Blogs", href: "" },
-    { name: "About", href: "" },
-    { name: "Contact", href: "" },
+    { name: "Home", href: "/" },
+    { name: "About", href: "/about" },
+    { name: "Portfolio", href: "/portfolio" },
+    { name: "Contact", href: "/contact" },
 ];
 // Variants for the navigation bar animation
 const navVariants = {
@@ -48,47 +47,49 @@ export default function NavigationBar() {
     });
 
     return (
-        <>
-            <nav className='z-50 w-full top-0  min-w-full mx-auto fixed start-0 flex justify-center items-center'>
-                <motion.div
-                    animate={[isResized ? "resize" : "visible", isMenuOpen ? "open" : "close"]}
-                    initial={false}
-                    transition={{ duration: 0.4, ease: 'easeInOut', type: 'spring', stiffness: 30 }}
-                    variants={navVariants}
-                    className={cn('w-full bg-white py-2', isResized && "mt-3 border shadow-md rounded-3xl", isMenuOpen && "w-full")}
-                >
-                    <div className='w-full px-4 md:px-8 flex justify-between items-center gap-44 sm:gap-24'>
-                        <div className='flex gap-2 items-center'>
-                            <img src="/logo.png" className="w-[5.7rem] h-11 font-semibold" alt="Logo" />
-                        </div>
-                        <div className="hidden md:flex items-center gap-4 text-base font-medium">
-                            {navigationItems.map((item, index) => (
-                                <a className='opacity-85 hover:opacity-100 font-normal hover:scale-105 transition-all duration-200 ease-in-out hover:-translate-y-1 active:translate-y-0 active:scale-90' key={index} href={item.href}>
-                                    {item.name}
-                                </a>
-                            ))}
-                        </div>
-                            <MenuToggle isMenuOpen={isMenuOpen} setMenuOpen={setIsMenuOpen} />
+        <motion.nav
+            initial={{ y: -20,opacity:0 }}
+            animate={{ y: 0,opacity:1 }}
+            transition={{ duration: 0.4, ease: 'easeIn' }}
+            className='z-50 w-full top-0  min-w-full mx-auto fixed start-0 flex justify-center items-center'>
+            <motion.div
+                animate={[isResized ? "resize" : "visible", isMenuOpen ? "open" : "close"]}
+                initial={false}
+                transition={{ duration: 0.4, ease: 'easeInOut', type: 'spring', stiffness: 30 }}
+                variants={navVariants}
+                className={cn('w-full bg-white py-2', isResized && "mt-3 border shadow-md rounded-3xl", isMenuOpen && "w-full")}
+            >
+                <div className='w-full px-4 md:px-8 flex justify-between items-center gap-44 sm:gap-24'>
+                    <a href='/' className='flex gap-2 items-center'>
+                        <img src="/logo.png" className="w-[5.7rem] h-11 font-semibold" alt="Logo" />
+                    </a>
+                    <div className="hidden md:flex items-center gap-4 text-base font-medium">
+                        {navigationItems.map((item, index) => (
+                            <a className='opacity-85 hover:opacity-100 font-normal hover:scale-105 transition-all duration-200 ease-in-out hover:-translate-y-1 active:translate-y-0 active:scale-90' key={index} href={item.href}>
+                                {item.name}
+                            </a>
+                        ))}
                     </div>
-                    {isMenuOpen && (
-                        <div className="flex my-16 bg-black/10 dark:bg-white/10 rounded-xl mx-4 flex-col px-5 py-7 gap-5 text-lg font-medium">
-                            {navigationItems.map((item, index) => (
-                                <motion.a
-                                    initial={{ opacity: 0, y: 20 }}
-                                    animate={{ opacity: 1, y: 0 }}
-                                    transition={{ ease: 'easeInOut', duration: 0.3, delay: index * 0.2, stiffness: 50, type: 'spring' }}
-                                    className='py-2 rounded-xl border border-black/20 px-4 flex items-center dark:border-white/15 hover:-translate-y-2 ease-in-out duration-150 hover:bg-black hover:text-white shadow dark:hover:bg-white dark:hover:text-black bg-white dark:bg-black'
-                                    key={index}
-                                    href={item.href}
-                                >
-                                    {item.name}
-                                </motion.a>
-                            ))}
-                        </div>
-                    )}
-                </motion.div>
-            </nav>
-        </>
+                    <MenuToggle isMenuOpen={isMenuOpen} setMenuOpen={setIsMenuOpen} />
+                </div>
+                {isMenuOpen && (
+                    <div className="flex my-16 bg-black/10 dark:bg-white/10 rounded-xl mx-4 flex-col px-5 py-7 gap-5 text-lg font-medium">
+                        {navigationItems.map((item, index) => (
+                            <motion.a
+                                initial={{ opacity: 0, y: 20 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ ease: 'easeInOut', duration: 0.3, delay: index * 0.2, stiffness: 50, type: 'spring' }}
+                                className='py-2 rounded-xl border border-black/20 px-4 flex items-center dark:border-white/15 hover:-translate-y-2 ease-in-out duration-150 hover:bg-black hover:text-white shadow dark:hover:bg-white dark:hover:text-black bg-white dark:bg-black'
+                                key={index}
+                                href={item.href}
+                            >
+                                {item.name}
+                            </motion.a>
+                        ))}
+                    </div>
+                )}
+            </motion.div>
+        </motion.nav>
     );
 }
 
