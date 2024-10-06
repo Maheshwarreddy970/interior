@@ -1,22 +1,26 @@
 {
-    "about": {
-        "counter": [
-            {
-                "name": "Projects Done",
-                "number": 600
-            },
-            {
-                "name": "Years of Experience",
-                "number": 10
-            },
-            {
-                "name": "Clients",
-                "number": 250
-            },
-            {
-                "name": "Design Hours",
-                "number": 50000
-            }
-        ]
-    }
+  "about": {
+    "counter": [
+      {
+        "name": "Projects Done",
+        "number": 600
+      },
+      {
+        "name": "Years of Experience",
+        "number": 10
+      },
+      {
+        "name": "Clients",
+        "number": 250
+      },
+      {
+        "name": "Design Hours",
+        "number": 50000
+      }
+    ]
+  },
+  "history": [
+    "Experienced Partner & Director of Operations Ankit Agarwal carries a mammoth legacy of creative excellence combined with a fearless compulsion to evolve . This mantle has been handed to him by his father & uncle, the legendary maestro of all Interior Executions. Skilled in Interior Architecture, Modern Furniture, Residential Design, Concept Art, and Commercial Interiors. The burning & restless quest to explore every medium of creative application has led Ankit Agarwal in the past 9 years , starting with Interior Execution Specialist , adding in furniture & interior design , organically evolving into a Furniture Designer & searing through graphic illustration for Residential & Commercial Spaces.",
+    "In this process, The past one decade have seen national awards & accolades, while catering to an array of elite clients such as the Jcb India, Manav Rachna Group, Bilt Group, PSP Legal advocates & solicitors, B.S Anagpuria Insittute of technology to name a few. From 1000 sq.ft. Projects scaling to mammoth Residential & Commercial spaces he has garnered himself a global presence taking his philosophy of Indigenous Luxury far & wide. An institute of designing requires at least three year curriculum but Ankit says he has dedicated the past 12 years in learning & still remains a passionate student."
+  ]
 }

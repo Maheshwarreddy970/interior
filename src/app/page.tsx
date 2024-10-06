@@ -25,7 +25,7 @@ export default function Home() {
     )()
   }, [])
   return (
-    <main className=" bg-[#FFFAF1]  overflow-hidden ">
+    <main className=" bg-[#FAF9F6]  overflow-hidden ">
       <AnimatePresence mode='wait'>
         {isLoading && <Preloader />}
       </AnimatePresence>

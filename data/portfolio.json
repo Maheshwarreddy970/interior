@@ -1,270 +1,232 @@
 {
-    "portfolio": {
-        "productlist": {
-            "luxuryresidences": {
-                "heading": "Luxury Residences",
-                "thumbnail1": "/luxuryresidences/1.jpg",
-                "thumbnail2": "/luxuryresidences/3.jpg",
-                "subheading": "Bringing dreams to life with elegant and bespoke designs for high-end homes.",
-                "projects": [
-                    {
-                        "id":1,
-                        "title": "google",
-                        "thumbnail": "/luxuryresidences/1.jpg",
-                        "images": [
-                            "/luxuryresidences/1.jpg",
-                            "/luxuryresidences/2.jpg",
-                            "/luxuryresidences/3.jpg",
-                            "/luxuryresidences/4.jpg",
-                            "/luxuryresidences/5.webp",
-                            "/luxuryresidences/6.jpg",
-                            "/luxuryresidences/7.jpg",
-                            "/luxuryresidences/8.jpg",
-                            "/luxuryresidences/9.jpg",
-                            "/luxuryresidences/10.jpg",
-                            "/luxuryresidences/11.jpg",
-                            "/luxuryresidences/12.jpg",
-                            "/luxuryresidences/13.jpg",
-                            "/luxuryresidences/14.jpg",
-                            "/luxuryresidences/15.webp",
-                            "/luxuryresidences/16.jpg",
-                            "/luxuryresidences/17.jpg",
-                            "/luxuryresidences/18.jpg"
-                        ]
-                    },
-                    {
-                        "id":2,
-                        "title": "amazon",
-                        "thumbnail": "/luxuryresidences/2.jpg",
-                        "images": [
-                            "/luxuryresidences/1.jpg",
-                            "/luxuryresidences/2.jpg",
-                            "/luxuryresidences/3.jpg",
-                            "/luxuryresidences/4.jpg",
-                            "/luxuryresidences/5.webp",
-                            "/luxuryresidences/6.jpg",
-                            "/luxuryresidences/7.jpg",
-                            "/luxuryresidences/8.jpg",
-                            "/luxuryresidences/9.jpg",
-                            "/luxuryresidences/10.jpg",
-                            "/luxuryresidences/11.jpg",
-                            "/luxuryresidences/12.jpg",
-                            "/luxuryresidences/13.jpg",
-                            "/luxuryresidences/14.jpg",
-                            "/luxuryresidences/15.webp",
-                            "/luxuryresidences/16.jpg",
-                            "/luxuryresidences/17.jpg",
-                            "/luxuryresidences/18.jpg"
-                        ]
-                    },
-                    {
-                        "id":3,
-                        "title": "flipkart",
-                        "thumbnail": "/luxuryresidences/18.jpg",
-                        "images": [
-                            "/luxuryresidences/1.jpg",
-                            "/luxuryresidences/2.jpg",
-                            "/luxuryresidences/3.jpg",
-                            "/luxuryresidences/4.jpg",
-                            "/luxuryresidences/5.webp",
-                            "/luxuryresidences/6.jpg",
-                            "/luxuryresidences/7.jpg",
-                            "/luxuryresidences/8.jpg",
-                            "/luxuryresidences/9.jpg",
-                            "/luxuryresidences/10.jpg",
-                            "/luxuryresidences/11.jpg",
-                            "/luxuryresidences/12.jpg",
-                            "/luxuryresidences/13.jpg",
-                            "/luxuryresidences/14.jpg",
-                            "/luxuryresidences/15.webp",
-                            "/luxuryresidences/16.jpg",
-                            "/luxuryresidences/17.jpg",
-                            "/luxuryresidences/18.jpg"
-                        ]
-                    },
-                    {
-                        "id":4,
-                        "title": "facebook",
-                        "thumbnail": "/luxuryresidences/6.jpg",
-                        "images": [
-                            "/luxuryresidences/1.jpg",
-                            "/luxuryresidences/2.jpg",
-                            "/luxuryresidences/3.jpg",
-                            "/luxuryresidences/4.jpg",
-                            "/luxuryresidences/5.webp",
-                            "/luxuryresidences/6.jpg",
-                            "/luxuryresidences/7.jpg",
-                            "/luxuryresidences/8.jpg",
-                            "/luxuryresidences/9.jpg",
-                            "/luxuryresidences/10.jpg",
-                            "/luxuryresidences/11.jpg",
-                            "/luxuryresidences/12.jpg",
-                            "/luxuryresidences/13.jpg",
-                            "/luxuryresidences/14.jpg",
-                            "/luxuryresidences/15.webp",
-                            "/luxuryresidences/16.jpg",
-                            "/luxuryresidences/17.jpg",
-                            "/luxuryresidences/18.jpg"
-                        ]
-                    }
-                ]
-            },
-            "commercialspaces": {
-                "heading": "Commercial Spaces",
-                "thumbnail1": "/commercialspaces/1.jpg",
-                "thumbnail2": "/commercialspaces/2.jpg",
-                "subheading": "Transforming businesses with innovative, functional designs that enhance productivity and client engagement.",
-                "projects": [
-                    {
-                        "id":1,
-                        "title": "google",
-                        "thumbnail": "/commercialspaces/1.jpg",
-                        "images": [
-                            "/commercialspaces/1.jpg",
-                            "/commercialspaces/2.jpg",
-                            "/commercialspaces/3.jpg",
-                            "/commercialspaces/4.jpg",
-                            "/commercialspaces/7.jpg",
-                            "/commercialspaces/9.jpg",
-                            "/commercialspaces/10.jpg"
-                        ]
-                    },
-                    {
-                        "id":2,
-                        "title": "amazon",
-                        "thumbnail": "/commercialspaces/2.jpg",
-                        "images": []
-                    },
-                    {
-                        "id":3,
-                        "title": "flipkart",
-                        "thumbnail": "/commercialspaces/3.jpg",
-                        "images": []
-                    },
-                    {
-                        "id":4,
-                        "title": "facebook",
-                        "thumbnail": "/commercialspaces/4.jpg",
-                        "images": []
-                    }
-                ]
-            },
-            "institutionalprojects": {
-                "heading": "Institutional Projects",
-                "thumbnail1": "/institutionalprojects/1.jpg",
-                "thumbnail2": "/institutionalprojects/2.jpg",
-                "subheading": "Crafting environments that foster learning, collaboration, and innovation for educational and corporate institutions.",
-                "projects": [
-                    {
-                        "id":1,
-                        "title": "google",
-                        "thumbnail": "/institutionalprojects/1.jpg",
-                        "images": [
-                            "/institutionalprojects/1.jpg",
-                            "/institutionalprojects/2.jpg",
-                            "/institutionalprojects/3.jpg",
-                            "/institutionalprojects/4.jpg"
-                        ]
-                    },
-                    {
-                        "id":2,
-                        "title": "amazon",
-                        "thumbnail": "/institutionalprojects/1.jpg",
-                        "images": []
-                    },
-                    {
-                        "id":3,
-                        "title": "flipkart",
-                        "thumbnail": "/institutionalprojects/4.jpg",
-                        "images": []
-                    },
-                    {
-                        "id":4,
-                        "title": "facebook",
-                        "thumbnail": "/institutionalprojects/2.jpg",
-                        "images": []
-                    }
-                ]
-            },
-            "industrialspaces": {
-                "heading": "Industrial Spaces",
-                "thumbnail1": "/industrialspaces/3.jpg",
-                "thumbnail2": "/industrialspaces/1.jpg",
-                "subheading": "Designing efficient, safe, and functional interiors that streamline industrial operations.",
-                "projects": [
-                    {
-                        "id":1,
-                        "title": "google",
-                        "thumbnail": "",
-                        "images": [
-                            "/industrialspaces/3.jpg",
-                            "/industrialspaces/1.jpg",
-                            "/industrialspaces/2.jpg",
-                            "/industrialspaces/4.jpg"
-                        ]
-                    }
-                ]
-            },
-            "coworkingspaces": {
-                "heading": "Co-working Spaces",
-                "thumbnail1": "/coworkingspaces/5.jpg",
-                "thumbnail2": "/coworkingspaces/3.jpg",
-                "subheading": "Creating dynamic, flexible workspaces that inspire creativity and collaboration.",
-                "projects": [
-                    {
-                        "id":1,
-                        "title": "google",
-                        "thumbnail": "",
-                        "images": [
-                            "/coworkingspaces/5.jpg",
-                            "/coworkingspaces/3.jpg",
-                            "/coworkingspaces/2.jpg",
-                            "/coworkingspaces/1.jpg",
-                            "/coworkingspaces/4.jpg",
-                            "/coworkingspaces/6.jpg",
-                            "/coworkingspaces/7.jpg"
-                        ]
-                    }
-                ]
-            },
-            "luxuryresidencesclubhouses": {
-                "heading": "luxuryresidences Club Houses",
-                "thumbnail1": "/luxuryresidencesclubhouses/1.jpg",
-                "thumbnail2": "/luxuryresidencesclubhouses/2.jpg",
-                "subheading": "Designing stylish and inviting clubhouses that serve as vibrant community hubs.",
-                "projects": [
-                    {
-                        "id":1,
-                        "title": "google",
-                        "thumbnail": "/coworkingspaces/3.jpg",
-                        "images": [
-                            "/luxuryresidencesclubhouses/1.jpg",
-                            "/luxuryresidencesclubhouses/3.jpg",
-                            "/luxuryresidencesclubhouses/2.jpg",
-                            "/luxuryresidencesclubhouses/4.jpg"
-                        ]
-                    }
-                ]
-            },
-            "swimmingpools": {
-                "heading": "Swimming Pools",
-                "thumbnail1": "/swimmingpools/3.jpg",
-                "thumbnail2": "/swimmingpools/1.jpg",
-                "subheading": "Crafting stunning and serene pool areas that blend beauty with functionality.",
-                "projects": [
-                    {
-                        "id":1,
-                        "title": "google",
-                        "thumbnail": "/swimmingpools/3.jpg",
-                        "images": [
-                            "/swimmingpools/3.jpg",
-                            "/swimmingpools/4.jpg",
-                            "/swimmingpools/2.jpg",
-                            "/swimmingpools/1.jpg"
-                        ]
-                    }
-                ]
-            }
-        }
+  "portfolio": {
+    "productlist": {
+      "commerialoffice": {
+        "heading": "Commerial & Office",
+        "thumbnail1": "/luxuryresidences/1.jpg",
+        "thumbnail2": "/luxuryresidences/3.jpg",
+        "subheading": "Bringing dreams to life with elegant and bespoke designs for high-end homes.",
+        "projects": [
+          {
+            "id": 1,
+            "title": "google",
+            "thumbnail": "/luxuryresidences/1.jpg",
+            "images": [
+              "/luxuryresidences/1.jpg",
+              "/luxuryresidences/2.jpg",
+              "/luxuryresidences/3.jpg",
+              "/luxuryresidences/4.jpg",
+              "/luxuryresidences/5.webp",
+              "/luxuryresidences/6.jpg",
+              "/luxuryresidences/7.jpg",
+              "/luxuryresidences/8.jpg",
+              "/luxuryresidences/9.jpg",
+              "/luxuryresidences/10.jpg",
+              "/luxuryresidences/11.jpg",
+              "/luxuryresidences/12.jpg",
+              "/luxuryresidences/13.jpg",
+              "/luxuryresidences/14.jpg",
+              "/luxuryresidences/15.webp",
+              "/luxuryresidences/16.jpg",
+              "/luxuryresidences/17.jpg",
+              "/luxuryresidences/18.jpg"
+            ]
+          },
+          {
+            "id": 2,
+            "title": "amazon",
+            "thumbnail": "/luxuryresidences/2.jpg",
+            "images": [
+              "/luxuryresidences/1.jpg",
+              "/luxuryresidences/2.jpg",
+              "/luxuryresidences/3.jpg",
+              "/luxuryresidences/4.jpg",
+              "/luxuryresidences/5.webp",
+              "/luxuryresidences/6.jpg",
+              "/luxuryresidences/7.jpg",
+              "/luxuryresidences/8.jpg",
+              "/luxuryresidences/9.jpg",
+              "/luxuryresidences/10.jpg",
+              "/luxuryresidences/11.jpg",
+              "/luxuryresidences/12.jpg",
+              "/luxuryresidences/13.jpg",
+              "/luxuryresidences/14.jpg",
+              "/luxuryresidences/15.webp",
+              "/luxuryresidences/16.jpg",
+              "/luxuryresidences/17.jpg",
+              "/luxuryresidences/18.jpg"
+            ]
+          },
+          {
+            "id": 3,
+            "title": "flipkart",
+            "thumbnail": "/luxuryresidences/18.jpg",
+            "images": [
+              "/luxuryresidences/1.jpg",
+              "/luxuryresidences/2.jpg",
+              "/luxuryresidences/3.jpg",
+              "/luxuryresidences/4.jpg",
+              "/luxuryresidences/5.webp",
+              "/luxuryresidences/6.jpg",
+              "/luxuryresidences/7.jpg",
+              "/luxuryresidences/8.jpg",
+              "/luxuryresidences/9.jpg",
+              "/luxuryresidences/10.jpg",
+              "/luxuryresidences/11.jpg",
+              "/luxuryresidences/12.jpg",
+              "/luxuryresidences/13.jpg",
+              "/luxuryresidences/14.jpg",
+              "/luxuryresidences/15.webp",
+              "/luxuryresidences/16.jpg",
+              "/luxuryresidences/17.jpg",
+              "/luxuryresidences/18.jpg"
+            ]
+          },
+          {
+            "id": 4,
+            "title": "facebook",
+            "thumbnail": "/luxuryresidences/6.jpg",
+            "images": [
+              "/luxuryresidences/1.jpg",
+              "/luxuryresidences/2.jpg",
+              "/luxuryresidences/3.jpg",
+              "/luxuryresidences/4.jpg",
+              "/luxuryresidences/5.webp",
+              "/luxuryresidences/6.jpg",
+              "/luxuryresidences/7.jpg",
+              "/luxuryresidences/8.jpg",
+              "/luxuryresidences/9.jpg",
+              "/luxuryresidences/10.jpg",
+              "/luxuryresidences/11.jpg",
+              "/luxuryresidences/12.jpg",
+              "/luxuryresidences/13.jpg",
+              "/luxuryresidences/14.jpg",
+              "/luxuryresidences/15.webp",
+              "/luxuryresidences/16.jpg",
+              "/luxuryresidences/17.jpg",
+              "/luxuryresidences/18.jpg"
+            ]
+          }
+        ]
+      },
+      "factoryindustrial": {
+        "heading": "Factory & Industrial",
+        "thumbnail1": "/commercialspaces/1.jpg",
+        "thumbnail2": "/commercialspaces/2.jpg",
+        "subheading": "Transforming businesses with innovative, functional designs that enhance productivity and client engagement.",
+        "projects": [
+          {
+            "id": 1,
+            "title": "google",
+            "thumbnail": "/commercialspaces/1.jpg",
+            "images": [
+              "/commercialspaces/1.jpg",
+              "/commercialspaces/2.jpg",
+              "/commercialspaces/3.jpg",
+              "/commercialspaces/4.jpg",
+              "/commercialspaces/7.jpg",
+              "/commercialspaces/9.jpg",
+              "/commercialspaces/10.jpg"
+            ]
+          },
+          {
+            "id": 2,
+            "title": "amazon",
+            "thumbnail": "/commercialspaces/2.jpg",
+            "images": []
+          },
+          {
+            "id": 3,
+            "title": "flipkart",
+            "thumbnail": "/commercialspaces/3.jpg",
+            "images": []
+          },
+          {
+            "id": 4,
+            "title": "facebook",
+            "thumbnail": "/commercialspaces/4.jpg",
+            "images": []
+          }
+        ]
+      },
+      "luxaryresidences": {
+        "heading": "Luxury Residences",
+        "thumbnail1": "/industrialspaces/1.jpg",
+        "thumbnail2": "/industrialspaces/2.jpg",
+        "subheading": "Crafting environments that foster learning, collaboration, and innovation for educational and corporate institutions.",
+        "projects": [
+          {
+            "id": 1,
+            "title": "google",
+            "thumbnail": "/institutionalprojects/1.jpg",
+            "images": [
+              "/institutionalprojects/1.jpg",
+              "/institutionalprojects/2.jpg",
+              "/institutionalprojects/3.jpg",
+              "/institutionalprojects/4.jpg"
+            ]
+          },
+          {
+            "id": 2,
+            "title": "amazon",
+            "thumbnail": "/institutionalprojects/1.jpg",
+            "images": []
+          },
+          {
+            "id": 3,
+            "title": "flipkart",
+            "thumbnail": "/institutionalprojects/4.jpg",
+            "images": []
+          },
+          {
+            "id": 4,
+            "title": "facebook",
+            "thumbnail": "/institutionalprojects/2.jpg",
+            "images": []
+          }
+        ]
+      },
+      "institutionalprojects": {
+        "heading": "Institutional Projects",
+        "thumbnail1": "/institutionalprojects/1.jpg",
+        "thumbnail2": "/institutionalprojects/2.jpg",
+        "subheading": "Designing efficient, safe, and functional interiors that streamline industrial operations.",
+        "projects": [
+          {
+            "id": 1,
+            "title": "google",
+            "thumbnail": "",
+            "images": [
+              "/industrialspaces/3.jpg",
+              "/industrialspaces/1.jpg",
+              "/industrialspaces/2.jpg",
+              "/industrialspaces/4.jpg"
+            ]
+          }
+        ]
+      },
+      "recreationalspaces": {
+        "heading": "Recreational Spaces",
+        "thumbnail1": "/coworkingspaces/5.jpg",
+        "thumbnail2": "/coworkingspaces/3.jpg",
+        "subheading": "Creating dynamic, flexible workspaces that inspire creativity and collaboration.",
+        "projects": [
+          {
+            "id": 1,
+            "title": "google",
+            "thumbnail": "",
+            "images": [
+              "/coworkingspaces/5.jpg",
+              "/coworkingspaces/3.jpg",
+              "/coworkingspaces/2.jpg",
+              "/coworkingspaces/1.jpg",
+              "/coworkingspaces/4.jpg",
+              "/coworkingspaces/6.jpg",
+              "/coworkingspaces/7.jpg"
+            ]
+          }
+        ]
+      }
     }
+  }
 }

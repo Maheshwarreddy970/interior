@@ -1,13 +1,6 @@
 "use client";
-import React, {
-  useEffect,
-  useState,
-  createContext,
-} from "react";
-import {
-  IconArrowNarrowLeft,
-  IconArrowNarrowRight,
-} from "@tabler/icons-react";
+import React, { useEffect, useState, createContext } from "react";
+import { IconArrowNarrowLeft, IconArrowNarrowRight } from "@tabler/icons-react";
 import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
 import Image, { ImageProps } from "next/image";
@@ -28,7 +21,7 @@ export const CarouselContext = createContext<{
   onCardClose: (index: number) => void;
   currentIndex: number;
 }>({
-  onCardClose: () => { },
+  onCardClose: () => {},
   currentIndex: 0,
 });
 
@@ -86,7 +79,6 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
     <CarouselContext.Provider
       value={{ onCardClose: handleCardClose, currentIndex }}
     >
-
       <div className="relative w-full">
         <div
           className="flex w-full overflow-x-scroll overscroll-x-auto py-5 md:py-10 scroll-smooth [scrollbar-width:none]"
@@ -102,7 +94,7 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
           <div
             className={cn(
               "flex flex-row justify-start gap-4 pl-4",
-              "max-w-7xl mx-auto" // remove max-w-4xl if you want the carousel to span the full width of its container
+              "mx-auto " // remove max-w-4xl if you want the carousel to span the full width of its container
             )}
           >
             {items.map((item, index) => (
@@ -122,7 +114,7 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
                   },
                 }}
                 key={"card" + index}
-                className="last:pr-[5%] md:last:pr-[33%]  rounded-3xl"
+                className="last:pr-[5%]   rounded-3xl"
               >
                 {item}
               </motion.div>
@@ -155,9 +147,8 @@ export const Card = ({
   src,
   href,
   layout = false,
-  subheading
+  subheading,
 }: {
-
   index: number;
   title: string;
   src: string;
@@ -165,7 +156,6 @@ export const Card = ({
   href: string;
   layout?: boolean;
 }) => {
-
   return (
     <>
       <motion.a
@@ -180,8 +170,8 @@ export const Card = ({
           fill
           className="object-cover absolute z-10 inset-0"
         />
-        <div className=' absolute bottom-0 left-0 flex z-20  p-5 justify-between w-full'>
-          <MoveUpRight className='  rounded-full bg-[#FFFAF1] shadow-inner shadow-black p-2 size-11 group-hover/card3:translate-x-1 transition-all duration-300 ease-in-out  group-hover/card3:-translate-y-1'></MoveUpRight>
+        <div className=" absolute bottom-0 left-0 flex z-20  p-5 justify-between w-full">
+          <MoveUpRight className="  rounded-full bg-[#FAF9F6] shadow-inner shadow-black p-2 size-11 group-hover/card3:translate-x-1 transition-all duration-300 ease-in-out  group-hover/card3:-translate-y-1"></MoveUpRight>
         </div>
         <div className="relative z-40 p-8">
           <motion.p
