@@ -1,0 +1,22 @@
+{
+    "about": {
+        "counter": [
+            {
+                "name": "Projects Done",
+                "number": 600
+            },
+            {
+                "name": "Years of Experience",
+                "number": 10
+            },
+            {
+                "name": "Clients",
+                "number": 250
+            },
+            {
+                "name": "Design Hours",
+                "number": 50000
+            }
+        ]
+    }
+}

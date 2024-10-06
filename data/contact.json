@@ -1,0 +1,20 @@
+{
+    "contact": {
+        "address": "Aakarshan Furniture Systems, Plot no- D2/9 Tikona Park, New Industrial Township 2- NIT, Faridabad - 121001, Near Canara Bank",
+        "phone": [
+            "+91-9911375600",
+            "0129-4055600"
+        ],
+        "email": {
+            "sales": [
+                "sales@Casa mobilia.in",
+                "ankit@Casa mobilia.in"
+            ],
+            "vendor": [
+                "ankit@afsfurniture.in",
+                "info@Casa mobilia.in"
+            ],
+            "career": "megha@Casa mobilia.in"
+        }
+    }
+}

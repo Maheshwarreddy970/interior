@@ -1,0 +1,71 @@
+{
+    "home": {
+        "brands": [
+            {
+                "name": "Lingel",
+                "logo": "/brandslogo/brand1.png"
+            },
+            {
+                "name": "Geeken",
+                "logo": "/brandslogo/brand2.png"
+            },
+            {
+                "name": "King Koil",
+                "logo": "/brandslogo/brand3.png"
+            }
+        ],
+        "testimonial": [
+            {
+                "name": "Rohit Sharma",
+                "description": "Casa Mobilia truly exceeded my expectations! The quality of their bespoke furniture is unmatched, and the customization options are endless. My living room has never looked better!",
+                "stars": 5
+            },
+            {
+                "name": "Neha Kapoor",
+                "description": "From the initial consultation to the final delivery, the entire process was seamless. Casa Mobilia’s designs are a perfect blend of modern aesthetics and traditional craftsmanship. Highly recommended!",
+                "stars": 5
+            },
+            {
+                "name": "Amitabh Desai",
+                "description": "I wanted something unique for my home office, and Casa Mobilia delivered beyond my imagination. Their attention to detail is fantastic, and the furniture is both stylish and functional.",
+                "stars": 5
+            },
+            {
+                "name": "Priya Malhotra",
+                "description": "The team at Casa Mobilia helped me design my dream bedroom. Every piece is customized to perfection, and the quality is impeccable. Worth every penny!",
+                "stars": 5
+            },
+            {
+                "name": "Karthik Iyer",
+                "description": "Casa Mobilia’s furniture collection is simply stunning. We customized our entire dining room set, and the craftsmanship is top-notch. It feels luxurious and timeless!",
+                "stars": 5
+            },
+            {
+                "name": "Deepika Sinha",
+                "description": "The creativity and expertise at Casa Mobilia are unmatched. Their team helped transform my space into something that feels both modern and classic at the same time. Couldn’t be happier!",
+                "stars": 5
+            },
+            {
+                "name": "Anil Patel",
+                "description": "I’ve bought furniture from many places, but Casa Mobilia stands out for its bespoke designs and excellent customer service. Every piece feels like a work of art!",
+                "stars": 5
+            },
+            {
+                "name": "Shreya Nair",
+                "description": "Casa Mobilia's ability to customize furniture to your exact needs is incredible. They brought my vision to life with elegance and precision. I love my new home interiors!",
+                "stars": 5
+            },
+            {
+                "name": "Sanjay Gupta",
+                "description": "The craftsmanship and quality of Casa Mobilia’s furniture are second to none. The entire experience was professional, and the furniture was delivered on time. Highly recommend for luxury interiors!",
+                "stars": 5
+            },
+            {
+                "name": "Ritu Mehra",
+                "description": "Casa Mobilia offers a unique blend of contemporary and traditional designs. We revamped our entire living space with their bespoke furniture, and it’s nothing short of spectacular!",
+                "stars": 5
+            }
+        ]
+    }
+    
+}

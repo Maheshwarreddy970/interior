@@ -1,42 +1,47 @@
+"use client"
+
 import Image from 'next/image'
 import React from 'react'
 import sofa from '@/../public/sofa1.jpg'
 import BlurFade from './ui/blur-fade'
-
+import { cn } from '@/lib/utils'
+import { motion } from 'framer-motion';
+import logo from '@/../public/logoold.png'
 
 const navigation = {
   connect: [
-    { name: 'Book Meeting', href: '' },
+    { name: 'Insagram', href: 'https://www.instagram.com/casamobilia.official/?igsh=MWZzeXlxMjB3dGIwNQ%3D%3D' },
     {
-      name: 'Twitter',
-      href: 'https://twitter.com/justansub',
+      name: 'FaceBook',
+      href: 'https://www.facebook.com/AakarshanFurnitureSystems',
     },
     {
-      name: 'Github',
-      href: 'https://www.youtube.com/@SpeedyBrand-SEO',
+      name: 'Google',
+      href: 'https://www.google.co.in/search?sxsrf=ACYBGNTUcANLJ2TbXRWGG1b2z06xuIwBCw:1580378273271&q=casa+mobilia&spell=1&sa=X&ved=2ahUKEwj96drsh6vnAhX96XMBHVFcDxkQBSgAegQIDhAq&biw=1478&bih=759',
     },
     {
       name: 'LinkedIn',
-      href: 'https://www.linkedin.com/company/speedy-brand-inc/',
+      href: 'https://www.linkedin.com/in/aakarshan-furniture-systems-8a945861/',
     },
   ],
   company: [
-    { name: 'Blogs', href: '/' },
-    { name: 'Pricing', href: '/' },
-    { name: 'Affiliate Partner', href: '/' },
-    { name: 'AI For Enterprise', href: '/' },
+    { name: 'Home', href: '/home' },
+    { name: 'About', href: '/about' },
+    { name: 'Portfolio', href: '/portfolio' },
+    { name: 'Contact', href: '/contact' },
   ],
 }
 
-export default function Footer() {
+export default function Footer({className}:{className?:string}) {
   return (
-    <section className='mt-16 bg-black text-white  p-4 sm:p-10'>
-      <div className=' flex justify-between lg:flex-row flex-col'>
+    <motion.section
+    className={cn(' bg-black text-white  p-4 sm:p-10',className)}>
+      <div className=' flex mt-16 justify-between lg:flex-row flex-col'>
         <div className=' max-w-xl flex-col flex gap-9 '>
           <BlurFade className='text-4xl lg:text-6xl  font-semibold max-w-2xl'>Explore Our Proudly Collection</BlurFade>
           <BlurFade className=' text-left '>Whether you have distinct taste, or a unique space that needs a custom designed piece, our certified Custom Made furniture, will help you get anything made. Browse for ideas including: custom upholstery, custom tables, custom chairs, custom bedroom sets, custom shelves, custom built-ins, and more.</BlurFade>
         </div>
-        <BlurFade className=' mt-10 lg:mt-0'>
+        <BlurFade className=' hidden md:block mt-10 lg:mt-0'>
           <Image src={sofa} alt='sofa' className=' md:h-[18rem] md:w-[28rem] object-cover rounded-2xl '></Image>
         </BlurFade>
       </div>
@@ -81,13 +86,12 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className='  flex justify-center md:justify-end items-end mt-10 md:mt-0 '>
-          <BlurFade>
-          <p className=' text-8xl font-bold'>CASA</p>
-          <p className=' text-right text-lg o'>MOBILIA</p>
-          </BlurFade>
+        <div className='  flex justify-end lg:items-end  mt-10 md:mt-0 '>
+         <Image src={logo} alt='logo' className=' h-24 w-40 lg:h-32 lg:w-48'>
+
+         </Image>
         </div>
       </div>
-    </section>
+    </motion.section>
   )
 }
