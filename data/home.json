@@ -1,5 +1,5 @@
 {
-  "backgroundimage": "/home/landing.jpg",
+  "backgroundimage": ["/home/landing.jpg", "/home/landing2.JPG"],
   "home": {
     "brands": [
       {

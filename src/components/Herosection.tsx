@@ -1,12 +1,12 @@
 "use client";
 
-import Image from "next/image";
-import React, { useEffect, useState } from "react";
-import Button from "./ui/Button";
-import Textslide from "./ui/textslide";
-import GradualSpacing from "./ui/gradual-spacing";
-import { motion, useScroll, useTransform } from "framer-motion";
 import data from "@/../data/home.json";
+import { motion, useScroll, useTransform } from "framer-motion";
+import { useEffect, useState } from "react";
+import ImageCarousel from "./ImageCarouosal";
+import Button from "./ui/Button";
+import GradualSpacing from "./ui/gradual-spacing";
+import Textslide from "./ui/textslide";
 
 export default function Herosection() {
   const { scrollYProgress } = useScroll();
@@ -20,13 +20,14 @@ export default function Herosection() {
         style={{ y: y, opacity: opacity, scale: scale }}
         className=" h-full w-full absolute rounded-3xl  p-4 sm:p-10  overflow-hidden"
       >
-        <Image
-          src={data.backgroundimage}
+        {/* <Image
+          src={data.backgroundimage[0]}
           alt="background image"
           className="image border shadow-md h-full w-full rounded-3xl object-cover object-center"
           width={1080}
           height={1080}
-        ></Image>
+        ></Image> */}
+        <ImageCarousel images={data.backgroundimage} />
       </motion.div>
       <div className=" h-full w-full overflow-hidden flex flex-col  p-4 sm:p-10">
         <div className=" h-[70%] w-full flex justify-center items-center">
