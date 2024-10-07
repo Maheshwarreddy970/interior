@@ -55,7 +55,7 @@ export default function Bento() {
           <a href="/portfolio" className="group/card relative rounded-3xl ">
             <div className="  absolute top-5 left-5 w-full">
               <BorderButton
-                text="Luxary"
+                text="Luxury"
                 className=" border-white text-white"
               ></BorderButton>
             </div>

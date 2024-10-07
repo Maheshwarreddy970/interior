@@ -34,7 +34,7 @@ export default function Contact() {
   };
 
   return (
-    <div className="w-full max-w-2xl">
+    <div className="w-full ">
       <form className=" flex flex-col gap-4" onSubmit={handleSubmit(onSubmit)}>
         <BlurFade className="[--clr:#1f1f1f] :[--clr:#999999] relative flex flex-row items-center">
           <input

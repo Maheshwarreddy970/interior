@@ -9,20 +9,20 @@ import BlurFade from "./ui/blur-fade";
 const navigation = {
   connect: [
     {
-      name: "Insagram",
-      href: "https://www.instagram.com/casamobilia.official/?igsh=MWZzeXlxMjB3dGIwNQ%3D%3D",
+      name: "Instagram",
+      href: "https://www.instagram.com/casamobilia.official/",
     },
     {
-      name: "FaceBook",
-      href: "https://www.facebook.com/AakarshanFurnitureSystems",
+      name: "Facebook",
+      href: "https://www.facebook.com/p/Casa-Mobilia-Furniture-100067007434648/",
     },
     {
-      name: "Google",
-      href: "https://www.google.co.in/search?sxsrf=ACYBGNTUcANLJ2TbXRWGG1b2z06xuIwBCw:1580378273271&q=casa+mobilia&spell=1&sa=X&ved=2ahUKEwj96drsh6vnAhX96XMBHVFcDxkQBSgAegQIDhAq&biw=1478&bih=759",
+      name: "Youtube",
+      href: "https://www.youtube.com/@casamobilia1113",
     },
     {
       name: "LinkedIn",
-      href: "https://www.linkedin.com/in/aakarshan-furniture-systems-8a945861/",
+      href: "https://www.linkedin.com/company/casa-mobilia",
     },
   ],
   company: [
@@ -38,7 +38,7 @@ export default function Footer({ className }: { className?: string }) {
     <motion.section
       className={cn(" bg-black text-white  p-4 sm:p-10", className)}
     >
-      <div className=" flex mt-16 justify-between lg:flex-row flex-col">
+      <div className=" flex mt-16 justify-between items-center lg:flex-row flex-col">
         <div className=" max-w-xl flex-col flex gap-9 ">
           <BlurFade className="text-4xl lg:text-6xl  font-semibold max-w-2xl">
             Explore Our Proudly Collection
@@ -51,18 +51,9 @@ export default function Footer({ className }: { className?: string }) {
             custom shelves, custom built-ins, and more.
           </BlurFade>
         </div>
-        <BlurFade className=" hidden md:block mt-10 lg:mt-0">
-          <Image
-            src={logo}
-            alt="logo"
-            className=" h-24 w-40 lg:h-32 lg:w-48"
-          ></Image>
-        </BlurFade>
-      </div>
-      <div className=" pb-9 flex flex-col md:flex-row md:justify-between">
-        <div className="mt-16 justify-center md:justify-start flex gap-40">
+        <div className="justify-center md:justify-start flex gap-40">
           <div className="md:mt-0">
-            <p className="text-sm font-semibold leading-6">Connect</p>
+            <p className="text-lg font-semibold leading-6">Connect</p>
             <div className="mt-6 space-y-4">
               {navigation.connect.map((item) => (
                 <BlurFade key={item.name}>
@@ -80,7 +71,7 @@ export default function Footer({ className }: { className?: string }) {
           </div>
           <div>
             <div>
-              <h3 className="text-sm font-semibold leading-6 ">Company</h3>
+              <h3 className="text-lg font-semibold leading-6 ">Company</h3>
               <div className="mt-6 space-y-4">
                 {navigation.company.map((item) => (
                   <BlurFade key={item.name}>
@@ -96,6 +87,15 @@ export default function Footer({ className }: { className?: string }) {
             </div>
           </div>
         </div>
+        <BlurFade className=" hidden md:block mt-10 lg:mt-0">
+          <Image
+            src={logo}
+            alt="logo"
+            className=" h-24 w-40 lg:h-32 lg:w-48"
+          ></Image>
+        </BlurFade>
+      </div>
+      <div className=" pb-9 flex flex-col md:flex-row md:justify-between">
         {/* <div className="  flex justify-end lg:items-end  mt-10 md:mt-0 ">
           <Image
             src={logo}

@@ -6,23 +6,31 @@ import Preloader from "@/components/preloader/index";
 import Starssection from "@/components/Starsection";
 import BlurFade from "@/components/ui/blur-fade";
 import OpenCards from "@/components/ui/expandingcard";
-import { AnimatePresence, motion } from "framer-motion";
+import about from "@/../data/about.json";
+
+import {
+  AnimatePresence,
+  motion,
+  useScroll,
+  useTransform,
+} from "framer-motion";
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import LogoProof from "@/components/LogosSection";
 export default function Page() {
   // Renamed to Page
   const [isLoading, setIsLoading] = useState(true);
 
   // Use const instead of let
-  // const ref = useRef(null);
-  // const { scrollYProgress } = useScroll({
-  //   target: ref,
-  //   offset: ["start start", "end start"],
-  // });
+  const ref = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["start start", "end start"],
+  });
 
   // Use const instead of let
-  // const y = useTransform(scrollYProgress, [0, 1], ["0%", "-20%"]);
-  // const opacity = useTransform(scrollYProgress, [0, 1], [1, 0]);
+  const y = useTransform(scrollYProgress, [0, 1], ["0%", "-20%"]);
+  const opacity = useTransform(scrollYProgress, [0, 1], [1, 0]);
 
   // Handle loading effect
   useEffect(() => {
@@ -94,39 +102,7 @@ export default function Page() {
         </BlurFade>
       </div>
       <About></About>
-      {/* <div className="mt-28 space-y-8">
-        <div className=" flex flex-col items-center gap-6 mb-16">
-          <BlurFade
-            y={50}
-            className="text-3xl text-center lg:text-6xl font-semibold mb-5 tracking-wide"
-          >
-            OUR MISSION & VALUES
-          </BlurFade>
-          <BlurFade y={50} className="text-xl text-center lg:text-3xl ">
-            MISSION
-          </BlurFade>
-          <BlurFade y={50} className=" text-center lg:text-lg max-w-4xl">
-            To produce and distribute the highest quality of luxury furniture
-            products that stand for Design. Quality, Innovation and Value.
-          </BlurFade>
-          <BlurFade y={50} className="text-xl text-center lg:text-3xl ">
-            VISION
-          </BlurFade>
-          <BlurFade y={50} className=" text-center lg:text-lg max-w-4xl">
-            To become the leading manufacturing house for bespoke furniture in
-            the world, catering to build luxurious masterpieces that are desired
-            and appreciated by not only the most elite, but also the most
-            learned and demanding industry architects, designers and
-            consultants.{" "}
-          </BlurFade>
-          <BlurFade y={50} className="text-xl text-center lg:text-3xl ">
-            VALUES
-          </BlurFade>
-          <BlurFade y={50} className=" text-center lg:text-lg max-w-4xl">
-            To produce and distribute the highest quality furniture products
-            that stand for design, quality, innovation and value.
-          </BlurFade>
-        </div>
+      <div className="mt-28 space-y-8">
         <motion.div
           ref={ref}
           style={{ y: y, opacity }}
@@ -134,9 +110,11 @@ export default function Page() {
         >
           <BlurFade className="w-full mx-auto relative rounded-3xl col-span-1 flex justify-center">
             <Image
-              src={profile}
+              src={"/ankit.jpeg"}
               alt="profile"
               className="border shadow-md w-full md:w-80 rounded-2xl object-cover h-[26rem]"
+              width={1080}
+              height={1080}
             ></Image>
           </BlurFade>
           <div className="rounded-3xl col-span-2">
@@ -147,28 +125,46 @@ export default function Page() {
             </BlurFade>
           </div>
         </motion.div>
-      </div> */}
-      <div className="mt-10 relative">
-        <div className="absolute top-0 w-[60%] lg:w-[40%] left-0">
-          <BlurFade
-            x={-30}
-            className="text-2xl lg:text-6xl font-semibold w-full p-5 rounded-ee-2xl flex items-start  pt-1 pr-2 bg-[#FAF9F6] lg:pt-3 lg:pr-6"
-          >
-            Our Knowledge
-          </BlurFade>
-          <BlurFade
-            x={-30}
-            className="text-xs md:text-lg p-5 w-[80%] rounded-ee-2xl flex items-start  pt-1 pr-2 bg-[#FAF9F6] lg:pt-3 lg:pr-6"
-          >
-            Casa Mobilia&apos;s strength is its expertise, combining culture and
-            knowledge to form design ideas before turning them to life.
-          </BlurFade>
+      </div>
+      <LogoProof></LogoProof>
+      <div className="flex flex-col lg:flex-row justify-center items-center gap-10">
+        <div className="mt-10 relative w-full lg:w-[60%]">
+          {" "}
+          {/* Adjusted width for responsiveness */}
+          <div className="absolute top-0 w-full lg:w-[60%] left-0">
+            {" "}
+            {/* Adjusted width for responsiveness */}
+            <BlurFade
+              x={-30}
+              className="text-2xl lg:text-6xl font-semibold w-full p-5 rounded-ee-2xl flex items-start  pt-1 pr-2 bg-[#FAF9F6] lg:pt-3 lg:pr-6"
+            >
+              Our Knowledge
+            </BlurFade>
+            <BlurFade
+              x={-30}
+              className="text-xs md:text-lg p-5 w-full  rounded-ee-2xl flex items-start  pt-1 pr-2 bg-[#FAF9F6] lg:pt-3 lg:pr-6"
+            >
+              Casa Mobilia&apos;s strength is its expertise, combining culture
+              and knowledge to form design ideas before turning them to life.
+            </BlurFade>
+          </div>
+          <Image
+            src={image4}
+            alt="image"
+            className="rounded-3xl h-[26rem] object-cover w-full"
+          ></Image>
         </div>
-        <Image
-          src={image4}
-          alt="image"
-          className="rounded-3xl h-[26rem] object-cover w-full"
-        ></Image>
+        <div className="w-full lg:w-[40%]">
+          {" "}
+          {/* Adjusted width for responsiveness */}
+          <Image
+            src={"/about/team.jpg"}
+            alt="image"
+            width={1080}
+            height={1080}
+            className="w-full h-full object-cover rounded-3xl"
+          ></Image>
+        </div>
       </div>
     </motion.section>
   );
