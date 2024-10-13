@@ -21,7 +21,7 @@ export const CarouselContext = createContext<{
   onCardClose: (index: number) => void;
   currentIndex: number;
 }>({
-  onCardClose: () => {},
+  onCardClose: () => { },
   currentIndex: 0,
 });
 
@@ -157,12 +157,11 @@ export const Card = ({
   layout?: boolean;
 }) => {
   return (
-    <>
+    <div className=" border shadow-inner  md:h-[42rem]">
       <motion.a
-     
         href={`portfolio/${href}`}
         layoutId={layout ? `card-${title}` : undefined}
-        className="rounded-3xl relative border shadow-lg group/card3 bg-gray-100 :bg-neutral-900 h-[30rem] w-80 md:h-[40rem] md:w-96 overflow-hidden flex flex-col items-start justify-start z-10"
+        className="relative border shadow-lg group/card3 bg-gray-100 :bg-neutral-900 h-[20rem] w-80 md:h-[30rem] md:w-96 overflow-hidden flex flex-col items-start justify-start z-10"
       >
         <div className="absolute h-full top-0 inset-x-0 bg-gradient-to-b from-black/50 via-transparent to-transparent z-30 pointer-events-none" />
         <BlurImage
@@ -174,17 +173,17 @@ export const Card = ({
         <div className=" absolute bottom-0 left-0 flex z-20  p-5 justify-between w-full">
           <MoveUpRight className="  rounded-full bg-[#FAF9F6] shadow-inner shadow-black p-2 size-11 group-hover/card3:translate-x-1 transition-all duration-300 ease-in-out  group-hover/card3:-translate-y-1"></MoveUpRight>
         </div>
-        <div className="relative z-40 p-5 text-white backdrop-blur-md from-transparent  lg:p-8">
-          <motion.p
-            layoutId={layout ? `title-${title}` : undefined}
-            className=" [text-shadow:_0_1px_0_rgb(0_0_0_/_40%)] text-xl md:text-3xl font-semibold max-w-xs text-left [text-wrap:balance] font-sans mt-2"
-          >
-            {title}
-          </motion.p>
-          <p className="  text-wrap mt-3">{subheading}</p>
-        </div>
       </motion.a>
-    </>
+      <div className="relative z-40 p-5  backdrop-blur-md from-transparent  lg:p-8">
+        <motion.p
+          layoutId={layout ? `title-${title}` : undefined}
+          className=" [text-shadow:_0_1px_0_rgb(0_0_0_/_40%)] text-xl md:text-3xl font-semibold max-w-xs text-left [text-wrap:balance] font-sans mt-2"
+        >
+          {title}
+        </motion.p>
+        <p className="  text-wrap mt-3">{subheading}</p>
+      </div>
+    </div>
   );
 };
 
