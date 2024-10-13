@@ -23,7 +23,7 @@ const LogoCarousel = () => (
 );
 
 const LogoProof = () => (
-  <section className="w-full py-12 overflow-hidden flex flex-col items-center">
+  <section className="w-full lg:py-12 overflow-hidden flex flex-col items-center">
     <motion.div className="">
       <motion.h1 className="text-2xl sm:text-5xl font-bold text-center">
         Associated Brands

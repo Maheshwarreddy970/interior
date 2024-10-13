@@ -5,32 +5,11 @@ import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import BlurFade from "./ui/blur-fade";
+import data from "@/../data/footer.json"
 
 const navigation = {
-  connect: [
-    {
-      name: "Instagram",
-      href: "https://www.instagram.com/casamobilia.official/",
-    },
-    {
-      name: "Facebook",
-      href: "https://www.facebook.com/p/Casa-Mobilia-Furniture-100067007434648/",
-    },
-    {
-      name: "Youtube",
-      href: "https://www.youtube.com/@casamobilia1113",
-    },
-    {
-      name: "LinkedIn",
-      href: "https://www.linkedin.com/company/casa-mobilia",
-    },
-  ],
-  company: [
-    { name: "Home", href: "/home" },
-    { name: "About", href: "/about" },
-    { name: "Portfolio", href: "/portfolio" },
-    { name: "Contact", href: "/contact" },
-  ],
+  connect:data.connect,
+  Page: data.Page
 };
 
 export default function Footer({ className }: { className?: string }) {
@@ -41,14 +20,10 @@ export default function Footer({ className }: { className?: string }) {
       <div className=" flex mt-16 justify-between items-center lg:flex-row flex-col">
         <div className=" max-w-xl flex-col flex gap-9 ">
           <BlurFade className="text-4xl lg:text-6xl  font-semibold max-w-2xl">
-            Explore Our Proudly Collection
+            {data.heading}
           </BlurFade>
           <BlurFade className=" text-left ">
-            Whether you have distinct taste, or a unique space that needs a
-            custom designed piece, our certified Custom Made furniture, will
-            help you get anything made. Browse for ideas including: custom
-            upholstery, custom tables, custom chairs, custom bedroom sets,
-            custom shelves, custom built-ins, and more.
+            {data.subheading}
           </BlurFade>
         </div>
         <div className="justify-center md:justify-start flex gap-40">
@@ -71,9 +46,9 @@ export default function Footer({ className }: { className?: string }) {
           </div>
           <div>
             <div>
-              <h3 className="text-lg font-semibold leading-6 ">Company</h3>
+              <h3 className="text-lg font-semibold leading-6 ">Page</h3>
               <div className="mt-6 space-y-4">
-                {navigation.company.map((item) => (
+                {navigation.Page.map((item) => (
                   <BlurFade key={item.name}>
                     <a
                       href={item.href}

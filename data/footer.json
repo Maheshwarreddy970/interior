@@ -1,0 +1,28 @@
+{
+    "heading":"Explore Our Proudly Collection",
+    "subheading": "Whether you have distinct taste, or a unique space that needs a custom designed piece, our certified Custom Made furniture will help you get anything made.\nBrowse for ideas including: custom upholstery, custom tables, custom chairs, custom bedroom sets, custom shelves, custom built-ins, and more.",
+    "connect": [
+        {
+          "name": "Instagram",
+          "href": "https://www.instagram.com/casamobilia.official/"
+        },
+        {
+          "name": "Facebook",
+          "href": "https://www.facebook.com/p/Casa-Mobilia-Furniture-100067007434648/"
+        },
+        {
+          "name": "Youtube",
+          "href": "https://www.youtube.com/@casamobilia1113"
+        },
+        {
+          "name": "LinkedIn",
+          "href": "https://www.linkedin.com/company/casa-mobilia"
+        }
+      ],
+      "Page": [
+        { "name": "Home", "href": "/home" },
+        { "name": "About", "href": "/about" },
+        { "name": "Portfolio", "href": "/portfolio" },
+        { "name": "Contact", "href": "/contact" }
+      ]
+}

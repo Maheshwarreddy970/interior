@@ -36,7 +36,7 @@ export default function Herosection() {
             className=" opacity-90 backdrop-blur-sm text-opacity-80 z-10 text-5xl lg:text-9xl font-bold"
           ></GradualSpacing>
         </div>
-        <div className=" mb-5 sm:mb-0">
+        <div className=" mb-6 ml-2 sm:mb-0">
           <div className=" px-3 flex gap-6 flex-col md:flex-row">
             <Textslide
               x={-50}
@@ -53,7 +53,7 @@ export default function Herosection() {
             </Textslide>
             <Textslide
               y={40}
-              className=" bg-black/5 p-3 border-white/60  rounded-xl backdrop-blur-2xl border shadow-sm"
+              className=" bg-black/5 p-3 border-white/50  rounded-xl backdrop-blur-2xl border shadow-sm"
             >
               <VideoPlayer url="https://www.youtube.com/watch?v=opEVjrYNXWI"></VideoPlayer>
             </Textslide>

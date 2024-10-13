@@ -173,7 +173,7 @@ export const Card = ({
         <div className=" absolute bottom-0 left-0 flex z-20  p-5 justify-between w-full">
           <MoveUpRight className="  rounded-full bg-[#FAF9F6] shadow-inner shadow-black p-2 size-11 group-hover/card3:translate-x-1 transition-all duration-300 ease-in-out  group-hover/card3:-translate-y-1"></MoveUpRight>
         </div>
-        <div className="relative z-40 p-8">
+        <div className="relative z-40 p-3 bg-gradient-to-t from-transparent backdrop-blur-lg via-black/80 shadow-inner shadow-white pb-20 to-black/80 lg:p-8">
           <motion.p
             layoutId={layout ? `title-${title}` : undefined}
             className="text-white text-xl md:text-3xl font-semibold max-w-xs text-left [text-wrap:balance] font-sans mt-2"

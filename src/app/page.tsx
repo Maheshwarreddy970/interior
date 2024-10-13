@@ -5,10 +5,11 @@ import Heroabout from "@/components/Heroabout";
 import Herosection from "@/components/Herosection";
 import { AppleCardsCarouselDemo } from "@/components/ui/SwipeCarousel";
 import Testimonial from "@/components/ui/Testimonial";
-import { AnimatePresence } from "framer-motion";
+import { AnimatePresence, motion } from 'framer-motion';
 import { useEffect, useState } from "react";
 import Preloader from "../components/preloader";
 import BlurFade from "@/components/ui/blur-fade";
+import Textparelex from "@/components/ui/Textparelex";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -29,36 +30,44 @@ export default function Home() {
       </AnimatePresence>
       <Herosection></Herosection>
       {/* <LogoProof></LogoProof> */}
-      <div className=" flex flex-col py-20 items-center gap-6 mb-16">
+      <div  className=" flex flex-col py-20 items-center gap-6 mb-16">
         <BlurFade
           y={50}
-          className="text-3xl text-center lg:text-6xl font-semibold mb-5 tracking-wide"
+          className="text-3xl text-center lg:text-5xl font-semibold mb-5 tracking-wide"
         >
           OUR MISSION & VALUES
         </BlurFade>
-        <BlurFade y={50} className="text-xl text-center lg:text-3xl ">
-          MISSION
-        </BlurFade>
-        <BlurFade y={50} className=" text-center lg:text-lg max-w-4xl">
-          To produce and distribute the highest quality of luxury furniture
-          products that stand for Design. Quality, Innovation and Value.
-        </BlurFade>
-        <BlurFade y={50} className="text-xl text-center lg:text-3xl ">
-          VISION
-        </BlurFade>
-        <BlurFade y={50} className=" text-center lg:text-lg max-w-4xl">
-          To become the leading manufacturing house for bespoke furniture in the
-          world, catering to build luxurious masterpieces that are desired and
-          appreciated by not only the most elite, but also the most learned and
-          demanding industry architects, designers and consultants.{" "}
-        </BlurFade>
-        <BlurFade y={50} className="text-xl text-center lg:text-3xl ">
-          VALUES
-        </BlurFade>
-        <BlurFade y={50} className=" text-center lg:text-lg max-w-4xl">
-          To produce and distribute the highest quality furniture products that
-          stand for design, quality, innovation and value.
-        </BlurFade>
+        <motion.div  className=" w-full grid mt-20 lg:grid-cols-3 max-w-7xl mx-auto">
+          <Textparelex>
+            <BlurFade y={50} className="text-xl text-center max-w-sm lg:text-xl ">
+              MISSION
+            </BlurFade>
+            <BlurFade y={50} className=" text-center lg:text-lg max-w-sm">
+              To produce and distribute the highest quality of luxury furniture
+              products that stand for Design. Quality, Innovation and Value.
+            </BlurFade>
+          </Textparelex>
+          <Textparelex>
+            <BlurFade y={50} className="text-xl text-center mt-7 lg:mt-36  max-w-sm lg:text-xl ">
+              VISION
+            </BlurFade>
+            <BlurFade y={50} className=" text-center lg:text-lg max-w-sm">
+              To become the leading manufacturing house for bespoke furniture in the
+              world, catering to build luxurious masterpieces that are desired and
+              appreciated by not only the most elite, but also the most learned and
+              demanding industry architects, designers and consultants.{" "}
+            </BlurFade>
+          </Textparelex>
+          <Textparelex>
+            <BlurFade y={50} className="text-xl text-center max-w-sm lg:text-xl ">
+              VALUES
+            </BlurFade>
+            <BlurFade y={50} className=" text-center lg:text-lg max-w-sm">
+              To produce and distribute the highest quality furniture products that
+              stand for design, quality, innovation and value.
+            </BlurFade>
+          </Textparelex>
+        </motion.div>
       </div>
       <Bento></Bento>
       <Heroabout></Heroabout>

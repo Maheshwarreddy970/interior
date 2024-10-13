@@ -29,7 +29,7 @@ export default function Page() {
   });
 
   // Use const instead of let
-  const y = useTransform(scrollYProgress, [0, 1], ["0%", "-20%"]);
+  const y = useTransform(scrollYProgress, [0, 1], ["0%", "-5%"]);
   const opacity = useTransform(scrollYProgress, [0, 1], [1, 0]);
 
   // Handle loading effect
@@ -128,7 +128,7 @@ export default function Page() {
       </div>
       <LogoProof></LogoProof>
       <div className="flex flex-col lg:flex-row justify-center items-center gap-10">
-        <div className="mt-10 relative w-full lg:w-[60%]">
+        <div className="relative w-full lg:w-[60%]">
           {" "}
           {/* Adjusted width for responsiveness */}
           <div className="absolute top-0 w-full lg:w-[60%] left-0">
@@ -142,7 +142,7 @@ export default function Page() {
             </BlurFade>
             <BlurFade
               x={-30}
-              className="text-xs md:text-lg p-5 w-full  rounded-ee-2xl flex items-start  pt-1 pr-2 bg-[#FAF9F6] lg:pt-3 lg:pr-6"
+              className="text-xs md:text-lg p-5 w-[90%]  rounded-ee-2xl flex items-start  pt-1 pr-2 bg-[#FAF9F6] lg:pt-3 lg:pr-6"
             >
               Casa Mobilia&apos;s strength is its expertise, combining culture
               and knowledge to form design ideas before turning them to life.
@@ -162,7 +162,7 @@ export default function Page() {
             alt="image"
             width={1080}
             height={1080}
-            className="w-full h-full object-cover rounded-3xl"
+            className="w-full shadow-md border h-full object-cover rounded-3xl"
           ></Image>
         </div>
       </div>

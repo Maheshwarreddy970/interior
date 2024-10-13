@@ -11,7 +11,7 @@ export default function Button({
     <button
       type="submit"
       disabled={loading}
-      className="group border shadow-md relative transition-all duration-200 hover:scale-105 active:scale-95 inline-flex h-11 items-center justify-center overflow-hidden rounded-xl bg-neutral-950 px-6 text-neutral-200"
+      className="group border shadow-md border-white/40  relative transition-all duration-200 hover:scale-105 active:scale-95 inline-flex h-11 items-center justify-center overflow-hidden rounded-xl bg-neutral-950 px-6 text-neutral-200"
     >
       <span>{loading ? "Please wait" : text}</span>
       {!loading && (
