@@ -8,8 +8,8 @@ import Testimonial from "@/components/ui/Testimonial";
 import { AnimatePresence, motion } from 'framer-motion';
 import { useEffect, useState } from "react";
 import Preloader from "../components/preloader";
-import BlurFade from "@/components/ui/blur-fade";
 import Textparelex from "@/components/ui/Textparelex";
+import BlurFade from "@/components/ui/blur-fade";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -39,33 +39,33 @@ export default function Home() {
         </BlurFade>
         <motion.div  className=" w-full grid mt-20 lg:grid-cols-3 max-w-7xl mx-auto">
           <Textparelex>
-            <BlurFade y={50} className="text-xl text-center max-w-sm lg:text-xl ">
+            <div  className="text-xl text-center max-w-sm lg:text-xl ">
               MISSION
-            </BlurFade>
-            <BlurFade y={50} className=" text-center lg:text-lg max-w-sm">
+            </div>
+            <div  className=" text-center lg:text-lg max-w-sm">
               To produce and distribute the highest quality of luxury furniture
               products that stand for Design. Quality, Innovation and Value.
-            </BlurFade>
+            </div>
           </Textparelex>
           <Textparelex>
-            <BlurFade y={50} className="text-xl text-center mt-7 lg:mt-36  max-w-sm lg:text-xl ">
+            <div  className="text-xl text-center mt-7 lg:mt-36  max-w-sm lg:text-xl ">
               VISION
-            </BlurFade>
-            <BlurFade y={50} className=" text-center lg:text-lg max-w-sm">
+            </div>
+            <div  className=" text-center lg:text-lg max-w-sm">
               To become the leading manufacturing house for bespoke furniture in the
               world, catering to build luxurious masterpieces that are desired and
               appreciated by not only the most elite, but also the most learned and
               demanding industry architects, designers and consultants.{" "}
-            </BlurFade>
+            </div>
           </Textparelex>
           <Textparelex>
-            <BlurFade y={50} className="text-xl text-center max-w-sm lg:text-xl ">
+            <div  className="text-xl text-center max-w-sm lg:text-xl ">
               VALUES
-            </BlurFade>
-            <BlurFade y={50} className=" text-center lg:text-lg max-w-sm">
+            </div>
+            <div  className=" text-center lg:text-lg max-w-sm">
               To produce and distribute the highest quality furniture products that
               stand for design, quality, innovation and value.
-            </BlurFade>
+            </div>
           </Textparelex>
         </motion.div>
       </div>
