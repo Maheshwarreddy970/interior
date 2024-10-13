@@ -39,19 +39,19 @@ export default function Home() {
         </BlurFade>
         <motion.div  className=" w-full grid mt-20 lg:grid-cols-3 max-w-7xl mx-auto">
           <Textparelex>
-            <div  className="text-xl text-center max-w-sm lg:text-xl ">
+            <div  className="text-xl text-left lg:text-center max-w-sm lg:text-xl ">
               MISSION
             </div>
-            <div  className=" text-center lg:text-lg max-w-sm">
+            <div  className=" text-left lg:text-center lg:text-lg max-w-sm">
               To produce and distribute the highest quality of luxury furniture
               products that stand for Design. Quality, Innovation and Value.
             </div>
           </Textparelex>
           <Textparelex>
-            <div  className="text-xl text-center mt-7 lg:mt-36  max-w-sm lg:text-xl ">
+            <div  className="text-xl text-right lg:text-center mt-7 lg:mt-36  max-w-sm lg:text-xl ">
               VISION
             </div>
-            <div  className=" text-center lg:text-lg max-w-sm">
+            <div  className=" text-right lg:text-center lg:text-lg max-w-sm">
               To become the leading manufacturing house for bespoke furniture in the
               world, catering to build luxurious masterpieces that are desired and
               appreciated by not only the most elite, but also the most learned and
@@ -59,10 +59,10 @@ export default function Home() {
             </div>
           </Textparelex>
           <Textparelex>
-            <div  className="text-xl text-center max-w-sm lg:text-xl ">
+            <div  className="text-xl text-left lg:text-center max-w-sm lg:text-xl ">
               VALUES
             </div>
-            <div  className=" text-center lg:text-lg max-w-sm">
+            <div  className=" text-left lg:text-center lg:text-lg max-w-sm">
               To produce and distribute the highest quality furniture products that
               stand for design, quality, innovation and value.
             </div>
