@@ -2,6 +2,7 @@
 
 import React from 'react'
 import data from '@/../data/portfolio.json';
+import Image from 'next/image';
 
 
 export default function ProductsList() {
@@ -18,7 +19,7 @@ export default function ProductsList() {
                         </div>
                     </a>
                     {product.thumbnail2.length > 0 && (
-                        <img
+                        <Image
                             style={{
                                 maskImage: `linear-gradient(to top, transparent, black 80%)`,
                             }}

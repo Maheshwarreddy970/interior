@@ -2,6 +2,7 @@ import { ReactNode } from "react";
 import { ArrowRightIcon } from "@radix-ui/react-icons";
 
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 
 const BentoGrid = ({
   children,
@@ -48,7 +49,7 @@ const BentoCard = ({
       className,
     )}
   >
-    <img alt="imge" src={background} className=" absolute h-full w-full left-0 top-0"></img>
+    <Image alt="imge" src={background} className=" absolute h-full w-full left-0 top-0"></Image>
     <div className="pointer-events-none z-10 flex transform-gpu flex-col gap-1 p-6 transition-all duration-300 group-hover:-translate-y-10">
       <h3 className="text-xl font-semibold text-neutral-700 :text-neutral-300">
         {name}
