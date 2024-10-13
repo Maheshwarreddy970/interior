@@ -23,6 +23,8 @@ export default function ProductsList() {
                             style={{
                                 maskImage: `linear-gradient(to top, transparent, black 80%)`,
                             }}
+                            height={1000}
+                            width={1000}
                             src={product.thumbnail2}
                             alt={product.heading}
                             className='h-full object-cover rounded-3xl left-0 top-0 w-full'

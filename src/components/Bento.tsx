@@ -61,6 +61,8 @@ export default function Bento() {
             </div>
           </a>
           <Image
+            width={800}
+            height={600}
             src={OutDoorSofa}
             alt="out door sofa"
             className=" object-cover w-full rounded-3xl h-full"

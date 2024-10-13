@@ -24,7 +24,7 @@ export default function Portfolio() {
                 <div className=' flex flex-col gap-5'>
                     <BlurFade>
                         <a href={'/portfolio/office'} className=' relative  group/card1 '>
-                            <Image src={office1} alt='office' className='object-cover rounded-3xl'></Image>
+                            <Image src={office1} alt='office' height={800} width={800} className='object-cover h-full w-full rounded-3xl'></Image>
                             <div className=' absolute bottom-0 left-0 flex p-5 justify-between w-full'>
                                 <p className=' text-4xl font-semibold tracking-widest text-white'>
                                     Commercial

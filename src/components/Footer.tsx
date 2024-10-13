@@ -64,6 +64,8 @@ export default function Footer({ className }: { className?: string }) {
         </div>
         <BlurFade className=" hidden md:block mt-10 lg:mt-0">
           <Image
+          height={128}
+          width={192}
             src={logo}
             alt="logo"
             className=" h-24 w-40 lg:h-32 lg:w-48"
