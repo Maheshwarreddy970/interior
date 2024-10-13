@@ -27,7 +27,7 @@ export default function Page() {
         className=" w-full h-1/2 lg:h-[30rem]"
       >
         <Image
-          src={"/about/portfolio.jpg"}
+          src={"/luxury-living-room-chair.jpg"}
           height={1080}
           width={1080}
           alt="sofa"
