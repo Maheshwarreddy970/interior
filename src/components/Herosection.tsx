@@ -43,12 +43,6 @@ export default function HeroSection() {
                 <Button text="View More" />
               </a>
             </Textslide>
-            <Textslide
-              y={40}
-              className="bg-black/5 p-3 border-white/50 rounded-xl backdrop-blur-2xl border shadow-sm"
-            >
-              <VideoPlayer url="https://www.youtube.com/watch?v=opEVjrYNXWI" />
-            </Textslide>
           </div>
         </div>
       </div>
@@ -56,22 +50,3 @@ export default function HeroSection() {
   );
 }
 
-const VideoPlayer = ({ url }: { url: string }) => {
-  // Extract the video ID from the URL directly
-  const videoId = url.split("v=")[1]?.split("&")[0];
-
-  // Return null if the video ID is not valid
-  if (!videoId) {
-    return null; // Optionally, you can display an error message
-  }
-
-  return (
-    <iframe
-      src={`https://www.youtube.com/embed/${videoId}`} // Use the embed URL
-      className="rounded-lg h-full w-full transition-transform duration-300 group-hover:scale-110"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowFullScreen
-      title="Video Player" // Accessibility improvement
-    />
-  );
-};
