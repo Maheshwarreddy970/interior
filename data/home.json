@@ -1,5 +1,22 @@
 {
   "backgroundimage": ["/home/landing.jpg", "/home/herophoto.jpg"],
+  "overview":{
+    "title":"WHAT MAKES US UNIQUE?",
+    "info":[
+      {
+        "heading":"OUR TEAM",
+        "text":"Having a strong presence over 7 cities, our team consists of highly skilled professionals such as Architects, Engineers, Chartered Accountants, Company Secretaries & Auditors, Procurement team and disaster management certified project managers to give business a technical edge."
+      },
+      {
+        "heading":"OUR EXPERTISE",
+        "text":"Having worked with one in every five Fortune 100 companies, Cherry Hill has expanded its clientele from corporate offices to hospitals and hotels. Specialist in LEED-certified green building projects, we have also diversified our service offering beyond interiors solutions, to offer comprehensive fit-out solutions as well as General Contracting with all its related services and IT packages. Capable of delivering offices of 1 million square feet and above on General Contracting basis. Created over 25 million square feet of workspace seating more than half a million professionals across the country."
+      },
+      {
+        "heading":"OUR APPROACH",
+        "text":"What sets us apart is our client centric approach which enables us to work with integrity and constantly aiming for excellence. This strategy has enabled us to achieve an extremely high customer retention rate, showcased by 70% of our annual business coming from existing clients. We engage our clients with the best consultants who ensure adherence to budget and timelines."
+      }
+    ]
+  },
   "home": {
     "brands": [
       {
