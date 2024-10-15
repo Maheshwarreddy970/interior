@@ -6,6 +6,7 @@ import ImageCarousel from "./ImageCarouosal";
 import Button from "./ui/Button";
 import GradualSpacing from "./ui/gradual-spacing";
 import Textslide from "./ui/textslide";
+import { useEffect, useState } from "react";
 
 export default function HeroSection() {
   const { scrollYProgress } = useScroll();
@@ -43,6 +44,12 @@ export default function HeroSection() {
                 <Button text="View More" />
               </a>
             </Textslide>
+            <Textslide
+              y={40}
+              className=" bg-black/5 p-3 border-white/50  rounded-xl backdrop-blur-2xl border shadow-sm"
+            >
+              <VideoPlayer url="https://www.youtube.com/watch?v=opEVjrYNXWI"></VideoPlayer>
+            </Textslide>
           </div>
         </div>
       </div>
@@ -50,3 +57,26 @@ export default function HeroSection() {
   );
 }
 
+const VideoPlayer = ({ url }: { url: string }) => {
+  const [isSSR, setIsSSR] = useState(true);
+
+  useEffect(() => {
+    setIsSSR(false);
+  }, []);
+
+  if (isSSR) {
+    return null; // Or return a loading spinner during SSR
+  }
+
+  // Extract the video ID from the URL
+  const videoId = url.split("v=")[1].split("&")[0]; // Get the video ID
+
+  return (
+    <iframe
+      src={`https://www.youtube.com/embed/${videoId}`} // Use the embed URL
+      className=" rounded-lg h-full w-full  transition-transform duration-300 group-hover:scale-110"
+      allow="accelerometer; autoplay; clipboard-write;  encrypted-media; gyroscope; picture-in-picture"
+      allowFullScreen
+    ></iframe>
+  );
+};
