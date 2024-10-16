@@ -157,18 +157,18 @@ export const Card = ({
   layout?: boolean;
 }) => {
   return (
-    <div className=" border shadow-inner  md:h-[42rem]">
+    <div className=" border  shadow-inner  md:h-[42rem]">
       <motion.a
         href={`portfolio/${href}`}
         layoutId={layout ? `card-${title}` : undefined}
-        className="relative border shadow-lg group/card3 bg-gray-100 :bg-neutral-900 h-[20rem] w-80 md:h-[30rem] md:w-96 overflow-hidden flex flex-col items-start justify-start z-10"
+        className="relative border shadow-lg group/card3 bg-gray-100 h-[20rem] w-80 md:h-[30rem] md:w-96 overflow-hidden flex flex-col items-start justify-start z-10"
       >
         <div className="absolute h-full top-0 inset-x-0 bg-gradient-to-b from-black/50 via-transparent to-transparent z-30 pointer-events-none" />
         <BlurImage
           src={src}
           alt={title}
           fill
-          className="object-cover absolute z-10 inset-0"
+          className="object-cover hover:scale-110 ease-in-out transition-all duration-300 absolute z-10 inset-0"
         />
         <div className=" absolute bottom-0 left-0 flex z-20  p-5 justify-between w-full">
           <MoveUpRight className="  rounded-full bg-[#FAF9F6] shadow-inner shadow-black p-2 size-11 group-hover/card3:translate-x-1 transition-all duration-300 ease-in-out  group-hover/card3:-translate-y-1"></MoveUpRight>

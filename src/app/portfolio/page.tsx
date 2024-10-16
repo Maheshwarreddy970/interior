@@ -24,14 +24,14 @@ export default function Page() {
       <motion.div
         ref={ref}
         style={{ y: y, opacity: opacity, scale }}
-        className=" w-full h-1/2 lg:h-[30rem]"
+        className=" w-full h-1/2 overflow-hidden rounded-2xl lg:h-[30rem]"
       >
         <Image
           src={"/luxury-living-room-chair.jpg"}
           height={1080}
           width={1080}
           alt="sofa"
-          className="border shadow-lg object-cover w-full flex h-1/2 lg:h-[30rem] rounded-2xl sm:rounded-3xl"
+          className="border hover:scale-110 ease-in-out transition-all duration-300 shadow-lg object-cover w-full flex h-1/2 lg:h-[30rem] rounded-2xl sm:rounded-3xl"
         />
       </motion.div>
       <div className="grid-cols-1 lg:grid-cols-2 grid py-16 gap-10">

@@ -5,7 +5,7 @@ import Model from './Model'
 
 export default function Scene({activeMenu}) {
   return (
-    <div className='fixed top-0 h-screen w-full'>
+    <div className='fixed top-0 bg-blend-screen		 h-full w-full'>
         <Canvas>
             <Model activeMenu={activeMenu}/>
         </Canvas>

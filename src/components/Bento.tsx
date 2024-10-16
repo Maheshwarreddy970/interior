@@ -51,21 +51,22 @@ export default function Bento() {
             <BorderButton text="Aesthetic" group="cardthree"></BorderButton>
           </div>
         </BlurFade>
-        <BlurFade y={0} x={20} className="">
-          <a href="/portfolio" className="group/card relative rounded-3xl ">
+        <BlurFade y={0} x={20} className=" overflow-hidden rounded-3xl">
+          <a href="/portfolio" className="group/card overflow-hidden relative rounded-3xl ">
             <div className="  absolute top-5 left-5 w-full">
               <BorderButton
                 text="Luxury"
-                className=" border-white text-white"
+                className=" border-white z-30 text-white"
               ></BorderButton>
             </div>
           </a>
+        
           <Image
             width={800}
             height={600}
             src={OutDoorSofa}
             alt="out door sofa"
-            className=" object-cover w-full rounded-3xl h-full"
+            className=" object-cover hover:scale-110 ease-in-out transition-all duration-300 w-full rounded-3xl h-full"
           ></Image>
           <div
             onClick={() => {

@@ -10,40 +10,48 @@ export default function Heroabout() {
     <motion.section className=" grid grid-cols-1 gap-5 lg:grid-cols-2 mt-5 p-4 sm:p-10 ">
       <BlurFade y={50} className=" grid grid-cols-2 gap-3">
         <div className=" w-full h-full ">
+        <div className="h-full w-full order-2 rounded-3xl border shadow-md overflow-hidden">
           <Image
             src={"/home/one.jpg"}
             alt="sofa image"
-            className="object-cover shadow-md h-full w-full order-2 rounded-3xl border"
+            className="object-cover hover:scale-110 ease-in-out transition-all duration-300 shadow-md h-full w-full order-2 rounded-3xl border"
             width={500}
             height={500}
           ></Image>
         </div>
+        </div>
         <div className=" w-full h-full ">
+        <div className="h-full w-full order-2 rounded-3xl border shadow-md overflow-hidden">
           <Image
             src={"/home/four.jpg"}
             alt="sofa image"
-            className="object-cover shadow-md h-full w-full order-2 rounded-3xl border"
+            className="object-cover hover:scale-110 ease-in-out transition-all duration-300 shadow-md h-full w-full order-2 rounded-3xl border"
             width={500}
             height={500}
           ></Image>
         </div>
-        <div className=" w-full h-full ">
-          <Image
-            src={"/home/three.jpg"}
-            alt="sofa image"
-            className="object-cover shadow-md h-[85%] w-full order-2 rounded-3xl border"
-            width={500}
-            height={500}
-          ></Image>
         </div>
         <div className=" w-full h-full ">
+          <div className="h-[85%] w-full order-2 rounded-3xl border shadow-md overflow-hidden">
+            <Image
+              src={"/home/three.jpg"}
+              alt="sofa image"
+              className="object-cover hover:scale-110 ease-in-out transition-all duration-300 shadow-md  w-full order-2 rounded-3xl border"
+              width={500}
+              height={500}
+            ></Image>
+          </div>
+        </div>
+        <div className=" w-full h-full ">
+        <div className="h-[85%] w-full order-2 rounded-3xl border shadow-md overflow-hidden">
           <Image
             src={"/home/two.jpg"}
             alt="sofa image"
-            className="object-cover shadow-md h-[85%] w-full order-2 rounded-3xl border"
+            className="object-cover hover:scale-110 ease-in-out transition-all duration-300 shadow-md h-full w-full order-2 rounded-3xl border"
             width={500}
             height={500}
           ></Image>
+        </div>
         </div>
       </BlurFade>
       <BlurFade y={50} className=" lg:p-4 sm:p-10 flex flex-col order-1 gap-5 ">
