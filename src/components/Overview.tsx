@@ -29,7 +29,7 @@ function Overview() {
     <>
       <div className=' flex flex-col  mt-10 gap-5 items-center'>
         {templist.map((data, i) => (
-          <div className=''>
+          <div key={i} className=''>
             <Cursor
               attachToParent
               variants={{
