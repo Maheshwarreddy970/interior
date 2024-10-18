@@ -7,6 +7,7 @@ import { useTexture, useAspect } from '@react-three/drei';
 import useMouse from './useMouse';
 import useDimension from './useDimension';
 import data from '@/../data/home.json';
+import { ThreeTextData } from '../Overview'
 
 export default function Model({ activeMenu }) {
 
@@ -15,7 +16,7 @@ export default function Model({ activeMenu }) {
     const dimension = useDimension();
     const mouse = useMouse();
     const opacity = useMotionValue(0);
-    const textures = data.overview.info.map((project) => useTexture(project.image));
+    const textures = ThreeTextData.map((project) => useTexture(project.Imges));
     const { width, height } = textures[0].image;
     const lerp = (x, y, a) => x * (1 - a) + y * a
 

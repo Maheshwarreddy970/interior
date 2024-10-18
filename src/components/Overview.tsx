@@ -5,35 +5,83 @@ import data from '@/../data/home.json';
 import BlurFade from './ui/blur-fade';
 import { cn } from '@/lib/utils';
 import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion';
+import { Cursor } from './ui/cursor';
 
 function Overview() {
   const [active, setActive] = useState(null);
 
-  return (
-    <div className="flex flex-col py-20 items-center gap-6 p-5">
-      <BlurFade
-        y={50}
-        className="text-3xl text-left lg:text-5xl font-semibold mb-10 tracking-wide"
-      >
-        {data.overview.title}
-      </BlurFade>
+  const templist = [
+    {
+      title: "CLASSIC",
+      image: "/sofa1.jpg"
+    },
+    {
+      title: "CONTEMPARART",
+      image: "/sofa2.jpg"
+    },
+    {
+      title: "ELECTIC",
+      image: "/sofa3.jpg"
+    }
+  ]
 
-      <div
-        onMouseLeave={() => setActive(null)}
-        className="relative grid lg:grid-cols-3 gap-7 max-w-7xl mx-auto z-10 w-full"
-      >
-        {data.overview.info.map((info, i) => (
-          <View
-            key={i}
-            active={active}
-            setActive={setActive}
-            text={info.text}
-            heading={info.heading}
-            imgSrc={info.image}
-          />
+  return (
+    <>
+      <div className=' flex flex-col  mt-10 gap-5 items-center'>
+        {templist.map((data, i) => (
+          <div className=''>
+            <Cursor
+              attachToParent
+              variants={{
+                initial: { height: 0, opacity: 0, scale: 0.3 },
+                animate: { height: 'auto', opacity: 1, scale: 1 },
+                exit: { height: 0, opacity: 0, scale: 0.3 },
+              }}
+              transition={{
+                type: 'spring',
+                duration: 0.3,
+                bounce: 0.1,
+              }}
+              className='overflow-hidden'
+              springConfig={{
+                bounce: 0.01,
+              }}
+            >
+              <img
+                src={data.image}
+                alt='Christian Church, Eastern Europe'
+                className='h-80 w-48 rounded-lg -z-20 shadow-lg object-cover  '
+              />
+            </Cursor>
+            <p className=' text-3xl md:text-7xl italic bg-black text-white mix-blend-difference z-50'>{data.title}</p>
+          </div>
         ))}
       </div>
-    </div>
+      <div className="flex flex-col py-20 items-center gap-6 p-5">
+        <BlurFade
+          y={50}
+          className="text-3xl text-left lg:text-5xl font-semibold mb-10 tracking-wide"
+        >
+          {data.overview.title}
+        </BlurFade>
+
+        <div
+          onMouseLeave={() => setActive(null)}
+          className="relative grid lg:grid-cols-3 gap-7 max-w-7xl mx-auto z-10 w-full"
+        >
+          {data.overview.info.map((info, i) => (
+            <View
+              key={i}
+              active={active}
+              setActive={setActive}
+              text={info.text}
+              heading={info.heading}
+              imgSrc={info.image}
+            />
+          ))}
+        </div>
+      </div>
+    </>
   );
 }
 
@@ -83,24 +131,24 @@ const View = ({ heading, imgSrc, text, active, setActive }) => {
         {text}
       </div>
 
-      
-        <motion.img
-          style={{
-            top,
-            left,
-            translateX: "0%",
-            translateY: "-30%",
-          }}
-          variants={{
-            initial: { scale: 0 },
-            whileHover: { scale: 1,x:[0,1,0] },
-          
-          }}
-          transition={{ease:'easeInOut',duration:0.3 ,type:'spring',stiffness:100}}
-          src={imgSrc}
-          className={cn("absolute  h-40 w-60 rounded-lg object-cover hidden",active==imgSrc && "block")}
-          alt={`Image representing a link for ${heading}`}
-        />
+
+      <motion.img
+        style={{
+          top,
+          left,
+          translateX: "0%",
+          translateY: "-30%",
+        }}
+        variants={{
+          initial: { scale: 0 },
+          whileHover: { scale: 1, x: [0, 1, 0] },
+
+        }}
+        transition={{ ease: 'easeInOut', duration: 0.3, type: 'spring', stiffness: 100 }}
+        src={imgSrc}
+        className={cn("absolute  h-40 w-60 rounded-lg object-cover hidden", active == imgSrc && "block")}
+        alt={`Image representing a link for ${heading}`}
+      />
     </motion.div>
   );
 };
