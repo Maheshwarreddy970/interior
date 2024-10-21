@@ -36,9 +36,8 @@ export default function HeroSection() {
               className="bg-black/5 p-4 md:w-[28rem] gap-3 rounded-xl backdrop-blur-2xl flex flex-col justify-between border border-white/60 shadow-sm"
             >
               <p className="text-wrap text-white">
-                Blending modern aesthetics with timeless elegance, our bespoke
-                furniture designs transform spaces, redefining the art of
-                sophisticated living.
+              "Elevate Your Style, Stand the Test of Time" 
+              Since 2012 at casa mobilia we combine global refinement with indigenous designs with  excellent team work and craftsmanship.
               </p>
               <a href="/portfolio">
                 <Button text="View More" />

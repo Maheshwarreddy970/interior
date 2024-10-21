@@ -1,5 +1,19 @@
 {
-  "backgroundimage": ["/home/landing.jpg", "/home/herophoto.jpg"],
+  "backgroundimage": ["/home/landing.jpg", "/home/herophoto.jpg","/home/office.jpg","/home/two.jpg"],
+  "texthovereffect":[
+    {
+      "title": "CLASSIC",
+      "image": "/sofa1.jpg"
+    },
+    {
+      "title": "CONTEMPARART",
+      "image": "/sofa2.jpg"
+    },
+    {
+      "title": "ELECTIC",
+      "image": "/sofa3.jpg"
+    }
+  ],
   "overview":{
     "title":"WHAT MAKES US UNIQUE?",
     "info":[

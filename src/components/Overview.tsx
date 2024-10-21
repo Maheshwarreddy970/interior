@@ -10,25 +10,11 @@ import { Cursor } from './ui/cursor';
 function Overview() {
   const [active, setActive] = useState(null);
 
-  const templist = [
-    {
-      title: "CLASSIC",
-      image: "/sofa1.jpg"
-    },
-    {
-      title: "CONTEMPARART",
-      image: "/sofa2.jpg"
-    },
-    {
-      title: "ELECTIC",
-      image: "/sofa3.jpg"
-    }
-  ]
 
   return (
     <>
       <div className=' flex flex-col  mt-10 gap-5 items-center'>
-        {templist.map((data, i) => (
+        {data.texthovereffect.map((data, i) => (
           <div key={i} className=''>
             <Cursor
               attachToParent
