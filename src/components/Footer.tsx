@@ -26,7 +26,7 @@ export default function Footer({ className }: { className?: string }) {
             {data.subheading}
           </BlurFade>
         </div>
-        <div className="justify-center md:justify-start flex gap-40">
+        <div className="justify-center mt-9 md:justify-start flex gap-40">
           <div className="md:mt-0">
             <p className="text-lg font-semibold leading-6">Connect</p>
             <div className="mt-6 space-y-4">
